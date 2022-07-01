@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="login.css">
     
+   
 </head>
 <body>
 
@@ -23,9 +24,9 @@
                 <p>for Latest trends, exciting offers and everything Bewakoof!</p>
                     
                <form action="submit">
-                 <input type="tel" placeholder="Enter your number" class="input-box" >
-               <!------ <input type="button" value="CONTINUE" onclick="phone()" class="input-box1" > -->
-                  <button onclick="phone()" class="input-box1">CONTINUE</button>
+                 <input type="tel" placeholder="Enter your number" class="input-box" id="phone" value="">
+                 <input type="submit"  class="input-box1" value="CONTINUE"></input> 
+              
                  <p id="or"><span>OR</span></p>
                  <input type="button" value="CONTINUE WITH EMAIL" onclick="" class="input-box2">
                  <input type="button" value="GOOGLE" onclick="" class="input-box3">
@@ -37,6 +38,32 @@
              </div>
 </div>
 
-<script src="login.js"></script>
+
 </body>
+<script  >
+
+  var mobil =localStorage.getItem("mobile")
+
+document.querySelector(".input-box1").addEventListener("click",mobile)
+
+  function mobile(){
+    event.preventDefault()
+
+    var mob = document.getElementById("phone").value;
+
+               if(mob==mobil){
+                      console.log("succesful")
+     }
+else
+{
+       console.log("looks like new user")
+       window.open("http://127.0.0.1:5500/signup/signup.html")
+
+}
+}
+
+
+
+</script>
+
 </html>

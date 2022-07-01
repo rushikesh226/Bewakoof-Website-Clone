@@ -18,16 +18,35 @@
                <h1>Sign Up</h1>
                <h2>Hi new buddy, let's get you started<br> with the bewakoofi!</h2>
                <form class="input-group">
-                 <input type="text" class="input-field" placeholder="Name" required>
-                 <input type="text" class="input-field" placeholder="Mobile" required>
-                 <input type="text" class="input-field" placeholder="Email Id" required>
-                 <input type="text" class="input-field" placeholder="Password" required>
+                 <input type="text" class="input-field" placeholder="Name"  id="name">
+                 <input type="tel" class="input-field" placeholder="Mobile" id="mobile">
+                 <input type="text" class="input-field" placeholder="Email Id" id="email" >
+                 <input type="text" class="input-field" placeholder="Password"  id="password">
                  <input type="checkbox" class="checkbox"><span>I want to receive order updates on Whatsapp</span>
-                 <button type="submit" class="submit-btn">PROCEED</button>
+                 
+                 <input type="submit"  class="submit-btn" value="PROCEED"></input> 
                </form>
             </div>
         
 
     </div>
+    <script>
+         
+         
+document.querySelector(".submit-btn").addEventListener("click",registerUser)
+function registerUser() {
+	// store new users username
+	var registername = document.getElementById('name').value
+    localStorage.setItem("name", registername);
+    var registermobile = document.getElementById('mobile').value
+    localStorage.setItem("mobile", registermobile);
+    var registeremail = document.getElementById('email').value
+	localStorage.setItem("email", registeremail);
+	var registerPassword = document.getElementById('password').value
+	localStorage.setItem("password", registerpassword);
+	
+}
+
+    </script>
 </body>
 </html>
