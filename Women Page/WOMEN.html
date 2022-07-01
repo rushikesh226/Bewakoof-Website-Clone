@@ -6,6 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WOMEN Page </title>
     <style>
+
+        #parent {
+            /* background-color: black; */
+            display: flex;
+            /* border-radius: 20px; */
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        #parent > div {
+            color: black;
+            margin: 20px;
+            font-size: 25px;
+            /* padding-left:  10px; */
+            /* padding-right: 10px; */
+        }
+
+         /* flex grow is child property and used for set more space
+        #parent :first-child {
+            flex-grow: 1;
+        } */
+
+        #parent > div:hover {
+            color: black;
+            cursor: pointer;
+            font-weight: 800;
+        }
+
+
+
         #topdiv {
             display: flex;
             flex-direction: row;
@@ -24,6 +55,7 @@
     
         }
 
+        /* This is used for pic1 */
         #pic1 {
             display: grid;
             grid-template-columns: 100%;
@@ -31,10 +63,37 @@
             
         } 
 
-       #pic1 > img {
+        #pic1 > img {
+            width: 100%;  
+            cursor: pointer;
+        }
+
+        /* This is used for pic2 */
+        #pic2 {
+            display: grid;
+            grid-template-columns: 100%;
+            margin: 20px 10px;
+            
+        } 
+
+       #pic2 > img {
             width: 100%;  
             cursor: pointer;
        }
+
+       /* This is used for pic3 */
+       #pic3 {
+            display: grid;
+            grid-template-columns: 100%;
+            /* margin: 20px 10px; */
+            
+        } 
+
+       #pic3 > img {
+            width: 100%;  
+            cursor: pointer;
+       }
+
 
         #flexdiv {
             display: grid;
@@ -69,7 +128,7 @@
        }
 
        /* this is used for popular and discount & stoopid headings */
-       #popular,#discount,#stoopid {
+       #popular,#discount,#stoopid,#bargain {
             display: flex;
             justify-content: center;
             margin-top: -10px;
@@ -77,14 +136,14 @@
            
        }
 
-       #popular,#discount,#stoopid > p {
+       #popular,#discount,#stoopid,#bargain > p {
         color: black;
         font-size: 20px;
         font-weight: bold;
        }
 
        /* This is used for popular category */
-       #griddiv {
+       #populardiv {
         display: grid;
         grid-template-columns: repeat(6,1fr);
         flex-wrap: nowrap;
@@ -92,7 +151,7 @@
         
        }
 
-       #griddiv > div > img {
+       #populardiv > div > img {
         width: 100%;
        }
 
@@ -125,7 +184,7 @@
         width: 100%;
        }
 
-       #bargain {
+       #bargaindiv {
         display: grid;
         grid-template-columns: repeat(4,1fr);
         flex-wrap: nowrap;
@@ -133,14 +192,22 @@
         cursor: pointer;
        }
 
-       #bargain > div > img {
+       #bargaindiv > div > img {
         width: 100%;
        }
+
+
     </style>
 </head>
 <body>
     
-        <h1 style="text-align: center;">WOMEN PAGE</h1>
+        <!-- <h1 style="text-align: center;">WOMEN PAGE</h1> -->
+
+        <div id="parent">
+            <div>MEN</div>
+            <div>WOMEN</div>
+            <div>ACCESSORIES</div>
+        </div>
 
     <!-- top div -->
     <div id="topdiv">
@@ -153,16 +220,16 @@
         </div>
 
         <div> 
-            <img src="https://images.bewakoof.com/uploads/grid/app/buy2fr599-women-banner-refreshment-1656401259.jpg" alt="top3rdimg">
+            <img src="https://images.bewakoof.com/uploads/grid/app/Static-Banner-1-1-Just-Arrived-AOP-Boxers-Women-1656486949.gif" alt="top3rdimg">
         </div>
     </div>
 
-    <!-- 2nd div for single pic -->
+    <!-- this is used for single top pic1 -->
     <div id="pic1">
             <img src="https://images.bewakoof.com/uploads/grid/app/desktop-tod-strip-women-1654149139.jpg" alt="crazy">
     </div>
 
-    <!-- 3rd div for multiple div -->
+    <!-- this is used for sample box container -->
     <div id="flexdiv">
         <div>
             <img src="https://images.bewakoof.com/uploads/grid/app/WhatsApp-Video-2022-01-29-at-14-06-03-1643446784.gif" alt="design">
@@ -211,13 +278,12 @@
 
     </div>
 
-    <!-- 4th container for POPULAR CATEGORIES  -->
-
+    <!-- this is used for POPULAR CATEGORIES layout  -->
     <div id="popular">
         <p> POPULAR CATEGORIES </p>
     </div>
     
-    <div id="griddiv">
+    <div id="populardiv">
 
         <div>
             <img src="https://images.bewakoof.com/uploads/grid/app/categories-to-bag-boxes-boyfriend-tees-1654498945.jpg" alt="bfftshirt">
@@ -281,8 +347,7 @@
 
     </div>
 
-    <!-- this div is used for discount section -->
-
+    <!-- this is used for discount pe discount section -->
     <div id="discount">
         <p> DISCOUNT PE DISCOUNT </p>
     </div>
@@ -310,10 +375,38 @@
 
     </div>
 
-    <!-- this is best bargain corner div -->
+    <!-- this is for BESTSELLERS FOR WOMEN section -->
 
-    <h1> BEST BARGAIN CORNER </h1>
+
+
+
+
+
+
+
+
+    <!-- this is for just three pic same layout as top -->
+    <div id="topdiv">
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/clearance-women-1656310516.jpg" alt="img1">
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/buy2fr599-women-banner-refreshment-1656401259.jpg" alt="img2">
+        </div>
+
+        <div> 
+            <img src="https://images.bewakoof.com/uploads/grid/app/pride-common-banner-new-1656315250.jpg" alt="img3">
+        </div>
+    </div>
+
+
+    <!-- this is best bargain corner section -->
     <div id="bargain">
+        <p> BEST BARGAIN CORNER </p>
+    </div>
+
+    <div id="bargaindiv">
         <div>
             <img src="https://images.bewakoof.com/uploads/grid/app/budget-buy-05-1656338266.jpg" alt="tshirttop">
 
@@ -336,16 +429,23 @@
     </div>
 
 
-
-
-    <!-- lower side div The stoopid collection -->
-
-
+    <!-- this is for the THE STOOPID COLLECTION section -->
     <div id="stoopid">
         <p> THE STOOPID COLLECTION </p>
     </div>
 
     <div id="stoopiddiv">
+        
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-Buy-3-Women-1656428001.jpg" alt="bold">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-Kurtis-Women-1656489998.jpg" alt="allover">
+
+        </div>
+
         <div>
             <img src="https://images.bewakoof.com/uploads/grid/app/Kurtas-mid-size-banner-women1-1656404922.jpg" alt="kurta">
 
@@ -356,18 +456,29 @@
 
         </div>
 
-        <div>
-            <img src="https://images.bewakoof.com/uploads/grid/app/AOp-Boxers-mid-banner-Women-1655971731.jpg" alt="bold">
+    </div>
 
-        </div>
+    <!-- this is for T-SHIRTS UNDER 299 -->
 
-        <div>
-            <img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-Pyjamas-Women-1656148307.jpg" alt="allover">
 
-        </div>
+
+
+
+
+
+    <!-- this is used for single footer pic2 -->
+    <div id="pic2">
+
+        <img src="https://images.bewakoof.com/uploads/grid/app/desktop---strip-1440---x-150---tribe-1634552003.png" alt="2ndbottompic">
 
     </div>
 
+    <!-- this is used for single footer pic3 -->
+    <div id="pic3">
+      
+        <img src="https://images.bewakoof.com/uploads/grid/app/design-survey-desktop-ticker-banner-1646808890.gif" alt="bottompic">
+            
+    </div>
 
 
 </body>
