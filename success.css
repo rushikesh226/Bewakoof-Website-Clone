@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+  }
+  #top {
+    margin: auto;
+    height: 400px;
+    width: 300px;
+    margin-top: 70px;
+  }
+  img {
+    height: 400px;
+    width: 300px;
+  }
+  #bottom {
+    text-align: center;
+    color: yellow;
+  }
