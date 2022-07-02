@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="signup.css">
+    
 </head>
 <body>
     <div class="container">
@@ -17,7 +18,7 @@
             <div id="form">
                <h1>Sign Up</h1>
                <h2>Hi new buddy, let's get you started<br> with the bewakoofi!</h2>
-               <form class="input-group">
+               <form class="input-group" action="login.html">
                  <input type="text" class="input-field" placeholder="Name"  id="name">
                  <input type="tel" class="input-field" placeholder="Mobile" id="mobile">
                  <input type="text" class="input-field" placeholder="Email Id" id="email" >
@@ -30,23 +31,8 @@
         
 
     </div>
-    <script>
-         
-         
-document.querySelector(".submit-btn").addEventListener("click",registerUser)
-function registerUser() {
-	// store new users username
-	var registername = document.getElementById('name').value
-    localStorage.setItem("name", registername);
-    var registermobile = document.getElementById('mobile').value
-    localStorage.setItem("mobile", registermobile);
-    var registeremail = document.getElementById('email').value
-	localStorage.setItem("email", registeremail);
-	var registerPassword = document.getElementById('password').value
-	localStorage.setItem("password", registerpassword);
-	
-}
-
-    </script>
+   <script src="signup.js"></script>
 </body>
+
+
 </html>
