@@ -1,6 +1,7 @@
-#pmt {
+ #pmt {
     background: transparent;
     display: flex;
+    margin: auto;
   }
   #pmt > img {
     height: 500px;

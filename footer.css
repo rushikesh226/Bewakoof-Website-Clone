@@ -1,8 +1,8 @@
-body{
+#footer{
     background: #0c0c0c;
 }
 .footerTitle{
-    margin: 40px 40px;
+    margin: 40px 40px 40px 40px;
     color: gold;
     line-height: 1px;
 }
@@ -33,12 +33,12 @@ ul li a {
     color: white;
     margin-right: 20px;
 }
-form input{
+/* form input{
     background-color: #0f0f0f;
     border: transparent;
     border-bottom: 1px solid gold;
     font-size: 18px;
-}
+} */
 button{
     background-color: gold;
     border: transparent;
