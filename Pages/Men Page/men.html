@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MEN PAGE </title>
+    <style>
+
+        #parent {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        #parent > div {
+            color: black;
+            margin: 20px;
+            font-size: 25px;
+        
+        }
+
+        #parent > div:hover {
+            color: black;
+            cursor: pointer;
+            font-weight: 800;
+            border-bottom: 4px solid rgb(239, 192, 103);
+        }
+
+
+        #topdiv {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0px;
+            cursor: pointer;
+           
+        }
+
+        #topdiv > div > img {
+            /* width: 361.33px; */
+            width: 425px;
+            padding: 8px;
+    
+        }
+
+        /* This is used for pic1 */
+        #pic1 {
+            display: grid;
+            grid-template-columns: 100%;
+            margin: 0px 10px;
+            
+        } 
+
+        #pic1 > img {
+            width: 100%;  
+            cursor: pointer;
+        }
+
+        /* This is used for pic2 */
+        #pic2 {
+            display: grid;
+            grid-template-columns: 100%;
+            margin: 20px 10px;
+            
+        } 
+
+       #pic2 > img {
+            width: 100%;  
+            cursor: pointer;
+       }
+
+       /* This is used for pic3 */
+       #pic3 {
+            display: grid;
+            grid-template-columns: 100%;
+            /* margin: 20px 10px; */
+            
+        } 
+
+       #pic3 > img {
+            width: 100%;  
+            cursor: pointer;
+       }
+
+
+        #flexdiv {
+            display: grid;
+            grid-template-columns: repeat(9,10%);
+            justify-content: center;
+            margin: 20px 0px;
+           
+
+        }
+
+        #flexdiv > div {
+            margin-right: 5px;
+            padding: 0px 10px;
+            
+        }
+
+       #flexdiv > div > img {
+            width: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+       #flexdiv > div > p {
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;   
+        margin-top: 10px; 
+        width: 100%;
+        cursor: pointer;
+       }
+
+       /* this is used for popular and discount & stoopid headings */
+       #popular,#discount,#stoopid,#bargain {
+            display: flex;
+            justify-content: center;
+            margin-top: -10px;
+            margin-bottom: -10px;
+           
+       }
+
+       #popular,#discount,#stoopid,#bargain > p {
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+       }
+
+       /* This is used for popular category */
+       #populardiv {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        flex-wrap: nowrap;
+        cursor: pointer;
+        
+       }
+
+       #populardiv > div > img {
+        width: 100%;
+       }
+
+       /* this is used for discount section */
+       #discountdiv {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px 10px;
+        /* grid-column-gap: 10px; */
+        flex-wrap: nowrap;
+        cursor: pointer;
+       }
+
+       #discountdiv > div > img {
+        width: 100%;
+       }
+
+
+       /* this is used for discount section */
+       #stoopiddiv {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px 10px;
+        /* grid-column-gap: 10px; */
+        flex-wrap: nowrap;
+        cursor: pointer;
+       }
+
+       #stoopiddiv > div > img {
+        width: 100%;
+       }
+
+       #bargaindiv {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        flex-wrap: nowrap;
+        gap: 10px 10px;
+        cursor: pointer;
+       }
+
+       #bargaindiv > div > img {
+        width: 100%;
+       }
+
+
+    </style>
+</head>
+<body>
+    
+        <!-- <h1 style="text-align: center;">WOMEN PAGE</h1> -->
+
+        <div id="parent">
+            <div>MEN</div>
+            <div>WOMEN</div>
+            <div>ACCESSORIES</div>
+        </div>
+
+    <!-- top div -->
+    <div id="topdiv">
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/JulyCOTM-VarsityGreen-HomepageBanner-StaticBanner-men1-1656661414.jpg" alt="topfirstimage">
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/Static-Banner-1-1-Printed-Tshirts-Men-1656682206.jpg" alt="top2ndimg">
+        </div>
+
+        <div> 
+            <img src="https://images.bewakoof.com/uploads/grid/app/Static-Banner-1-1-Just-Arrived-Performance-Tshirts-Men-1656486279.gif" alt="top3rdimg">
+        </div>
+    </div>
+
+    <!-- this is used for single top pic1 -->
+    <div id="pic1">
+            <img src="https://images.bewakoof.com/uploads/grid/app/desktop-tod-strip-men-1654149139.jpg" alt="crazy">
+    </div>
+
+    <!-- this is used for sample box container -->
+    <div id="flexdiv">
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/WhatsApp-Video-2022-01-29-at-14-06-03-1643446784.gif" alt="design">
+            <p> Design Of The Day </p>
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-best-seller-1637307127.jpg" alt="bestseller">
+            <p> Bestsellers </p>
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/thumbnail-extravagant-savings-1656075186.jpg" alt="personal care">
+            <p> Personal Care </p>
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/thumbnail-pride-1655384941.png" alt="pride">
+            <p>Pride Collection</p>
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/me-shirt-thumbnail-1656050646.jpg" alt="customized">
+            <p> Customization </p>
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/LuckySizes-Thumbnail-1653069698.jpg" alt="last size">
+            <p> Last Sizes Left </p>
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/tod-thumbnail-plus-size-1637307128.jpg" alt="plus size">
+            <p> Plus Size </p>
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/merch-store-thumbnail-1650381435.jpg" alt="official">
+            <p> The Official Merch Store </p>
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/bwkf-offer-thumbnail-1651735001.jpg" alt="couppan">
+            <p> Coupon Offers </p>
+        </div>
+
+    </div>
+
+    <!-- this is used for POPULAR CATEGORIES layout  -->
+    <div id="popular">
+        <p> POPULAR CATEGORIES </p>
+    </div>
+    
+    <div id="populardiv">
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/categories-to-bag-printed-tshirt-1654498507.png" alt="bfftshirt">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/categories-to-bag-boxes-size-1g-1654498502.png" alt="top">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/categories-to-bag-boxes-size-1h-1654498503.png" alt="plaintshirt">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/categories-to-bag-boxes-size-1j-1654498503.png" alt="dresses">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/categories-to-bag-boxes-size-1k-1654498503.png" alt="payjamas">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/categories-to-bag-boxes-size-1l-1654498504.png" alt="joggers">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/categories-to-bag-boxes-size-1m-1654498504.png" alt="shorts">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/categories-to-bag-boxes-size-printed-pyjama-1654501962.png" alt="jeans">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/categories-to-bag-boxes-size-1o-1654498506.png" alt="mobilecover">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/categories-to-bag-boxes-size-1b-1654498500.png" alt="boxers">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/categories-to-bag-boxes-size-1c-1654498500.png" alt="backpacks">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/categories-to-bag-boxes-size-1p-1654498506.png" alt="printedtshirt">
+
+        </div>
+
+    </div>
+
+    <!-- this is used for discount pe discount section -->
+    <div id="discount">
+        <p> DISCOUNT PE DISCOUNT </p>
+    </div>
+
+    <div id="discountdiv">
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-buy2get1-banner-refreshment-1654174645.jpg" alt="buy2get1">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/meshirt-men-1656488700.jpg" alt="girlswear">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/PlusSize-mid-size-banner-men-June-1654178469.jpg" alt="plussize">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-Buy-3-Men-1656428001.jpg" alt="savings">
+
+        </div>
+
+    </div>
+
+    <!-- this is for BESTSELLERS FOR WOMEN section -->
+
+
+
+
+
+
+
+
+
+    <!-- this is for just three pic same layout as top -->
+    <div id="topdiv">
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/tshirt-under-men-1656310517.jpg" alt="img1">
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/1x1-chinos-banner-1656657980.gif" alt="img2">
+        </div>
+
+        <div> 
+            <img src="https://images.bewakoof.com/uploads/grid/app/style-promotion-template-1x1-best-of-bottomwear-m-1656657981.jpg" alt="img3">
+        </div>
+    </div>
+
+
+    <!-- this is best bargain corner section -->
+    <div id="bargain">
+        <p> BEST BARGAIN CORNER </p>
+    </div>
+
+    <div id="bargaindiv">
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/budget-buy-01-1656338265.jpg" alt="tshirttop">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/budget-buy-02-1656338265.jpg" alt="shortsunder">
+
+        </div>
+
+        <div> 
+            <img src="https://images.bewakoof.com/uploads/grid/app/budget-buy-03-1656338266.jpg" alt="boxers">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/budget-buy-08-1656338268.jpg" alt="backpacks">
+
+        </div>
+    </div>
+
+
+    <!-- this is for the THE STOOPID COLLECTION section -->
+    <div id="stoopid">
+        <p> THE STOOPID COLLECTION </p>
+    </div>
+
+    <div id="stoopiddiv">
+        
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-extrabagant-savings-1656075186.jpg" alt="bold">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-play-banner-refreshment-1654174646.jpg" alt="allover">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-printed-boxer-m-1656668076.jpg" alt="kurta">
+
+        </div>
+
+        <div>
+            <img src="https://images.bewakoof.com/uploads/grid/app/Mid-Size-Banner-Boxers-Men-2-1656580715.jpg" alt="ethnic">
+
+        </div>
+
+    </div>
+
+    <!-- this is for T-SHIRTS UNDER 299 -->
+
+
+
+
+
+
+
+    <!-- this is used for single footer pic2 -->
+    <div id="pic2">
+
+        <img src="https://images.bewakoof.com/uploads/grid/app/desktop---strip-1440---x-150---tribe-1634552003.png" alt="2ndbottompic">
+
+    </div>
+
+    <!-- this is used for single footer pic3 -->
+    <div id="pic3">
+      
+        <img src="https://images.bewakoof.com/uploads/grid/app/design-survey-desktop-ticker-banner-1646808890.gif" alt="bottompic">
+            
+    </div>
+
+
+</body>
+</html>
