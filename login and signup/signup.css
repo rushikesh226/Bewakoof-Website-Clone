@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.container{
+    width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+      
+      column-gap: 0px;
+      row-gap: 0px;
+      background-image: linear-gradient(0deg,#fff4c4,#fff);
+      
+  }
+  
+  .container> div{
+  
+    height: 720px;
+    
+  }
+  #b1 img{
+    width: 50%;
+  
+    margin-left: 30%;
+    margin-top: 10%;
+  }
+  #form{
+   
+    width: 87%;
+    background-color: #fff;
+   
+  }
+  #form h1,h2{
+    margin-left: 15%;
+    font-family: "Montserrat",sans-serif;
+  }
+  .input-group{
+    top:180px;
+    position: absolute;
+    width: 480px;
+    transition: .5s;
+  }
+  .input-field{
+      width: 100%;
+     padding: 10px 0px;
+    margin: 36px 0;
+    margin-left: 25%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(173, 172, 172);
+    font-size: 22px;
+    font-family: "Montserrat",sans-serif;
+      
+  }
+  .submit-btn{
+    width:480px;
+    height: 80px;
+    display: block;
+    margin-left: 25%;
+    margin-top: 47px;
+    border-radius: 5px;
+    font-size: 30px;
+    background-color: rgb(148, 146, 146);
+    border: transparent;
+    color: #fff;
+  }
+  .checkbox{
+   margin-left: 25%;
+margin-top: 30px;
+
+  }
+  span{
+    font-family: "Montserrat",sans-serif;
+      font-size: 14px;
+  }
